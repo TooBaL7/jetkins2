@@ -16,7 +16,7 @@ pipeline {
         }
     stage('tfsec') {
       steps {
-        sh 'tfsec .'
+        sh 'tfsec.'
       }
     }
     stage('Approval for Terraform') {
