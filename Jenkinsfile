@@ -16,7 +16,7 @@ pipeline {
         }
     stage('tfsec') {
       steps {
-        sh '/c/projects/go/bin/tfsec /c/ProgramData/jenkins/.jenkins/workspace/TrabajoDevSecOps@tmp'
+        sh '/c/projects/go/bin/tfsec .'
       }
     }
     stage('Approval for Terraform') {
