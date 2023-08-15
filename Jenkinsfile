@@ -16,7 +16,7 @@ pipeline {
         }
     stage('tfsec') {
       steps {
-        sh 'tfsec .'
+        sh '/c/projects/go/bin/tfsec .'
       }
     }
     stage('Approval for Terraform') {
